@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderServiceImplTest" project="order-service" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.project.service.OrderServiceImplTest" time="0.218" displayname="OrderServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]">
+    <testcase name="testGetAll" classname="com.project.service.OrderServiceImplTest" time="0.218" displayname="testGetAll()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]/[method:testGetAll()]">
+      <error>org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don't call method on mock but on some other object.
+&#13;
+	at com.project.service.OrderServiceImplTest.testGetAll(OrderServiceImplTest.java:58)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

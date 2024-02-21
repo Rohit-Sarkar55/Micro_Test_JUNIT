@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderServiceImplTest" project="order-service" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.project.service.OrderServiceImplTest" time="0.212" displayname="OrderServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]">
+    <testcase name="testSearchById" classname="com.project.service.OrderServiceImplTest" time="0.151" displayname="testSearchById()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]/[method:testSearchById()]"/>
+    <testcase name="testAdd" classname="com.project.service.OrderServiceImplTest" time="0.029" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]/[method:testAdd()]"/>
+    <testcase name="testRemoveById" classname="com.project.service.OrderServiceImplTest" time="0.008" displayname="testRemoveById()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]/[method:testRemoveById()]"/>
+    <testcase name="testGetAll" classname="com.project.service.OrderServiceImplTest" time="0.01" displayname="testGetAll()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]/[method:testGetAll()]"/>
+  </testsuite>
+</testrun>

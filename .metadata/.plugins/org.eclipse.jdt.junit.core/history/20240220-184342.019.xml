@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PaymentServiceImplTest" project="payment-service" tests="5" started="5" failures="0" errors="2" ignored="0">
+  <testsuite name="com.project.service.PaymentServiceImplTest" time="0.301" displayname="PaymentServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]">
+    <testcase name="testAdd" classname="com.project.service.PaymentServiceImplTest" time="0.2" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testAdd()]"/>
+    <testcase name="testUpdateStatus" classname="com.project.service.PaymentServiceImplTest" time="0.027" displayname="testUpdateStatus()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testUpdateStatus()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.project.entity.Payment.getPaymentStatus()" because "updatedPayment" is null&#13;
+	at com.project.service.PaymentServiceImplTest.testUpdateStatus(PaymentServiceImplTest.java:116)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testGetAll" classname="com.project.service.PaymentServiceImplTest" time="0.002" displayname="testGetAll()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testGetAll()]">
+      <error>org.mockito.exceptions.misusing.UnfinishedVerificationException: 
+Missing method call for verify(mock) here:
+-&gt; at com.project.service.PaymentServiceImplTest.testUpdateStatus(PaymentServiceImplTest.java:116)
+
+Example of correct verification:
+    verify(mock).doSomething()
+
+Also, this error might show up because you verify either of: final/private/equals()/hashCode() methods.
+Those methods *cannot* be stubbed/verified.
+Mocking methods declared on non-public parent classes is not supported.
+&#13;
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.initMocks(MockitoTestExecutionListener.java:83)&#13;
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:60)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)&#13;
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)&#13;
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)&#13;
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)&#13;
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)&#13;
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)&#13;
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)&#13;
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)&#13;
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testRemove" classname="com.project.service.PaymentServiceImplTest" time="0.012" displayname="testRemove()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testRemove()]"/>
+    <testcase name="testSearch" classname="com.project.service.PaymentServiceImplTest" time="0.018" displayname="testSearch()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testSearch()]"/>
+  </testsuite>
+</testrun>

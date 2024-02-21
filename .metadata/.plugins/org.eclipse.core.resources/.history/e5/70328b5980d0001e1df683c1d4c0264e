@@ -1,0 +1,42 @@
+package com.project.controller;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
+
+import java.time.LocalDate;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.project.dto.OrderResponse;
+import com.project.entity.Order;
+import com.project.service.OrderServiceImpl;
+
+
+@WebMvcTest(controllers = {OrderController.class})
+class OrderControllerTest {
+	
+	
+	@MockBean
+	OrderServiceImpl orderService;
+	
+	@Autowired
+	MockMvc mockMvc;
+	
+	@Test
+	void testAddOrder() {
+		Order order = new Order(1, 1, 1, 100, LocalDate.of(2022, 10, 20), "pending");
+		
+		when(orderService.add(any(Order.class))).thenReturn(order);
+	}
+
+	@Test
+	void testSearchOrder() {
+		fail("Not yet implemented");
+	}
+
+}

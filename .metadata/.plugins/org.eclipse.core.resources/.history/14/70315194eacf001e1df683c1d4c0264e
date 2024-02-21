@@ -1,0 +1,34 @@
+package com.project.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class PaymentServiceImplTest {
+
+	@Test
+	void testAdd() {
+		
+	}
+
+	@Test
+	void testSearch() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testRemove() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetAll() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testUpdateStatus() {
+		fail("Not yet implemented");
+	}
+
+}

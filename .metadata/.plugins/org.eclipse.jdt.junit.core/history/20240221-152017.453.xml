@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PaymentControllerTest" project="payment-service" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.project.controller.PaymentControllerTest" time="0.489" displayname="PaymentControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]">
+    <testcase name="test_GetAllPayments" classname="com.project.controller.PaymentControllerTest" time="0.357" displayname="test_GetAllPayments()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:test_GetAllPayments()]"/>
+    <testcase name="testRemovePayment" classname="com.project.controller.PaymentControllerTest" time="0.109" displayname="testRemovePayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:testRemovePayment()]"/>
+    <testcase name="test_SearchPayment" classname="com.project.controller.PaymentControllerTest" time="0.007" displayname="test_SearchPayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:test_SearchPayment()]"/>
+    <testcase name="test_AddPayment" classname="com.project.controller.PaymentControllerTest" time="0.009" displayname="test_AddPayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:test_AddPayment()]"/>
+  </testsuite>
+</testrun>

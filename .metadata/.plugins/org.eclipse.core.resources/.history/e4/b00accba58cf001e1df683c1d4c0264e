@@ -1,0 +1,11 @@
+package com.project.service;
+
+import com.project.entity.Payment;
+
+public interface PaymentService {
+	Payment add (Payment payment);
+	
+	Payment search(long paymentId);
+	
+	void remove (long paymentId);
+}

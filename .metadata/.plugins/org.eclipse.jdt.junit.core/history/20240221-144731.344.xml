@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PaymentControllerTest" project="payment-service" tests="6" started="6" failures="5" errors="1" ignored="0">
+  <testsuite name="com.project.controller.PaymentControllerTest" time="0.2" displayname="PaymentControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]">
+    <testcase name="testProcessPayment" classname="com.project.controller.PaymentControllerTest" time="0.037" displayname="testProcessPayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:testProcessPayment()]">
+      <failure>org.opentest4j.AssertionFailedError: Not yet implemented&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)&#13;
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)&#13;
+	at com.project.controller.PaymentControllerTest.testProcessPayment(PaymentControllerTest.java:53)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testRemovePayment" classname="com.project.controller.PaymentControllerTest" time="0.006" displayname="testRemovePayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:testRemovePayment()]">
+      <failure>org.opentest4j.AssertionFailedError: Not yet implemented&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)&#13;
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)&#13;
+	at com.project.controller.PaymentControllerTest.testRemovePayment(PaymentControllerTest.java:63)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testSearchPayment" classname="com.project.controller.PaymentControllerTest" time="0.003" displayname="testSearchPayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:testSearchPayment()]">
+      <failure>org.opentest4j.AssertionFailedError: Not yet implemented&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)&#13;
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)&#13;
+	at com.project.controller.PaymentControllerTest.testSearchPayment(PaymentControllerTest.java:58)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testUpdatePayment" classname="com.project.controller.PaymentControllerTest" time="0.004" displayname="testUpdatePayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:testUpdatePayment()]">
+      <failure>org.opentest4j.AssertionFailedError: Not yet implemented&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)&#13;
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)&#13;
+	at com.project.controller.PaymentControllerTest.testUpdatePayment(PaymentControllerTest.java:73)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testGetAllPayments" classname="com.project.controller.PaymentControllerTest" time="0.004" displayname="testGetAllPayments()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:testGetAllPayments()]">
+      <failure>org.opentest4j.AssertionFailedError: Not yet implemented&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)&#13;
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)&#13;
+	at com.project.controller.PaymentControllerTest.testGetAllPayments(PaymentControllerTest.java:68)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="test_AddPayment" classname="com.project.controller.PaymentControllerTest" time="0.137" displayname="test_AddPayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:test_AddPayment()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.project.entity.Payment["paymentDate"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1308)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:35)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:772)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:479)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:318)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4719)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3964)&#13;
+	at com.project.controller.PaymentControllerTest.test_AddPayment(PaymentControllerTest.java:46)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

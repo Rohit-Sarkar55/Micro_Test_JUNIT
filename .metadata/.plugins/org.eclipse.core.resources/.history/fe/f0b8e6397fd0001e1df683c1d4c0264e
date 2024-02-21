@@ -1,0 +1,22 @@
+package com.project.controller;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+
+
+@WebMvcTest(controllers = {OrderController.class})
+class OrderControllerTest {
+
+	@Test
+	void testAddOrder() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSearchOrder() {
+		fail("Not yet implemented");
+	}
+
+}

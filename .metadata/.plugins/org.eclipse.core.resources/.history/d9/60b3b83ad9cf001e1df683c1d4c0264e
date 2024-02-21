@@ -1,0 +1,38 @@
+package com.project.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+
+import com.project.repository.OrderRepository;
+
+class OrderServiceImplTest {
+	
+	@Mock
+	OrderRepository orderRepository;
+	
+	
+
+//	@Test
+//	void testAdd() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	void testSearchById() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	void testRemoveById() {
+//		fail("Not yet implemented");
+//	}
+	
+	
+	@Test
+	void testGetAll() {
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PaymentControllerTest" project="payment-service" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.project.controller.PaymentControllerTest" time="0.275" displayname="PaymentControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]">
+    <testcase name="test_AddPayment" classname="com.project.controller.PaymentControllerTest" time="0.275" displayname="test_AddPayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:test_AddPayment()]"/>
+  </testsuite>
+</testrun>

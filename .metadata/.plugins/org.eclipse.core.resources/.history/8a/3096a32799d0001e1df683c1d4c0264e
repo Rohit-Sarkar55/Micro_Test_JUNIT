@@ -1,0 +1,42 @@
+package com.project.controller;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.project.entity.Payment;
+
+class PaymentControllerTest {
+
+	@Test
+	void test_AddPayment() {
+		Payment p = new Payment();
+		p.setPaymentId(1);
+	}
+
+	@Test
+	void testProcessPayment() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSearchPayment() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testRemovePayment() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetAllPayments() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testUpdatePayment() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.project.service;
+
+import com.project.entity.Order;
+
+public interface OrderService {
+	Order add (Order order);
+	
+	Order searchById (long orderId);
+	
+	Order deleteById(long orderId);
+}

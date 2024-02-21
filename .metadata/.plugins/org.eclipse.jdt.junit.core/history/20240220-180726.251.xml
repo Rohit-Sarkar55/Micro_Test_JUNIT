@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PaymentServiceImplTest" project="payment-service" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="com.project.service.PaymentServiceImplTest" time="0.22" displayname="PaymentServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]">
+    <testcase name="testAdd" classname="com.project.service.PaymentServiceImplTest" time="0.192" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testAdd()]"/>
+    <testcase name="testSearch" classname="com.project.service.PaymentServiceImplTest" time="0.023" displayname="testSearch()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testSearch()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.project.entity.Payment.getPaymentId()" because the return value of "com.project.service.PaymentServiceImpl.search(long)" is null&#13;
+	at com.project.service.PaymentServiceImplTest.testSearch(PaymentServiceImplTest.java:59)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,29 @@
+package com.project.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class OrderServiceImplTest {
+
+//	@Test
+//	void testAdd() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	void testSearchById() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	void testRemoveById() {
+//		fail("Not yet implemented");
+//	}
+
+	@Test
+	void testGetAll() {
+		fail("Not yet implemented");
+	}
+
+}

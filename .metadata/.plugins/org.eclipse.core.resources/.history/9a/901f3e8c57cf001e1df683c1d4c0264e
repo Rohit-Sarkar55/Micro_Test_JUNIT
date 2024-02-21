@@ -1,0 +1,27 @@
+package com.project.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.TableGenerator;
+
+@Entity
+@Table(name = "payments")
+public class Payment {
+	
+	
+	@Id
+	@TableGenerator(name = "pay_seq_gen", table = "pay_seq_tab", 
+	pkColumnName = "pay_pk",valueColumnName = "pay_val", 
+	pkColumnValue = "pay",initialValue = 40000, allocationSize = 1) 
+	
+	@GeneratedValue(strategy = GenerationType.TABLE, generator = "pay_seq_gen")
+	
+	private long paymentId;
+	
+	private long orderId;
+	
+	private double paymentAmount;
+}

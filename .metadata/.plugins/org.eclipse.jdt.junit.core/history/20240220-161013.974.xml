@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderServiceImplTest" project="order-service" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.project.service.OrderServiceImplTest" time="5.179" displayname="OrderServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]">
+    <testcase name="testGetAll" classname="com.project.service.OrderServiceImplTest" time="5.179" displayname="testGetAll()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]/[method:testGetAll()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.project.repository.OrderRepository.findAll()" because "this.orderRepository" is null&#13;
+	at com.project.service.OrderServiceImplTest.testGetAll(OrderServiceImplTest.java:52)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

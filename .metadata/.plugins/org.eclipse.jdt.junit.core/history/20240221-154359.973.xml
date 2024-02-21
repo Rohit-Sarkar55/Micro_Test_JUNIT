@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PaymentControllerTest" project="payment-service" tests="5" started="5" failures="1" errors="0" ignored="0">
+  <testsuite name="com.project.controller.PaymentControllerTest" time="0.448" displayname="PaymentControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]">
+    <testcase name="test_GetAllPayments" classname="com.project.controller.PaymentControllerTest" time="0.3" displayname="test_GetAllPayments()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:test_GetAllPayments()]"/>
+    <testcase name="testRemovePayment" classname="com.project.controller.PaymentControllerTest" time="0.094" displayname="testRemovePayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:testRemovePayment()]"/>
+    <testcase name="test_SearchPayment" classname="com.project.controller.PaymentControllerTest" time="0.007" displayname="test_SearchPayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:test_SearchPayment()]"/>
+    <testcase name="test_UpdatePayment" classname="com.project.controller.PaymentControllerTest" time="0.03" displayname="test_UpdatePayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:test_UpdatePayment()]">
+      <failure>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;405&gt;&#13;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)&#13;
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)&#13;
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)&#13;
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)&#13;
+	at com.project.controller.PaymentControllerTest.test_UpdatePayment(PaymentControllerTest.java:149)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="test_AddPayment" classname="com.project.controller.PaymentControllerTest" time="0.01" displayname="test_AddPayment()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.PaymentControllerTest]/[method:test_AddPayment()]"/>
+  </testsuite>
+</testrun>

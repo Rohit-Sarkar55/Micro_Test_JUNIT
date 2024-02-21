@@ -1,0 +1,113 @@
+package com.project.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.project.dto.Order;
+import com.project.dto.PaymentResponse;
+import com.project.entity.Payment;
+import com.project.service.PaymentService;
+
+@RestController
+@RequestMapping("/payments")
+public class PaymentController {
+	
+	@Autowired
+	PaymentService paymentService;
+	
+	@Autowired
+	RestTemplate restTemplate;
+	
+	@PostMapping("create")
+	public Payment addPayment(@RequestBody Payment payment) {
+		payment.setPaymentDate(payment.getPaymentDate());
+		payment.setPaymentStatus(payment.getPaymentStatus());
+		return paymentService.add(payment);
+	}
+	
+	
+	@PostMapping("createpayment")
+	public ResponseEntity<PaymentResponse> processPayment (@RequestBody Order order) {
+		Payment payment = new Payment();
+		
+		payment.setOrderId(order.getOrderId());
+		payment.setPaymentAmount(order.getAmount());
+		payment.setPaymentDate(order.getOrderDate());
+		payment.setPaymentMethod(payment.getPaymentMethod());
+		payment.setPaymentStatus(payment.getPaymentStatus());
+		
+		paymentService.add(payment);
+		PaymentResponse response = new PaymentResponse();
+		response.setMessage("Payment created successfully");
+		response.setPayment(payment);
+		response.setOrder(order);
+		return ResponseEntity.status(HttpStatus.CREATED).body(response);
+	}
+	
+	
+	
+	@GetMapping("{paymentId}")
+	public ResponseEntity<PaymentResponse> searchPayment (@PathVariable long paymentId) {
+		
+		Payment p =  paymentService.search(paymentId);
+		PaymentResponse resp = new PaymentResponse();
+		if(p == null) {
+			resp.setMessage("Payment with that id does not exist");
+			return ResponseEntity.status(HttpStatus.ACCEPTED).body(resp);
+		}else {
+			resp.setMessage("Payment fetched successfully");
+			resp.setPayment(p);
+		}
+	}
+	
+	
+	@DeleteMapping("delete/{paymentId}")
+	public void removePayment(@PathVariable long paymentId) {
+		paymentService.remove(paymentId);
+	}
+	
+	
+	@GetMapping("")
+	public List<Payment> getAllPayments(){
+		return paymentService.getAll();
+	}
+	
+	
+	
+	@PutMapping("updatestatus")
+	public Payment updatePayment(@RequestParam long paymentId , @RequestParam String status) {
+		
+		Payment payment = paymentService.updateStatus(paymentId, status);
+		
+		String orderServiceURL = "http://localhost:8081/orders/updateorderstatus";
+		
+		HttpHeaders httpHeaders = new HttpHeaders();
+		
+		httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+		
+		HttpEntity<Payment> reqEntity = new HttpEntity<>(payment, httpHeaders);
+		
+		ResponseEntity<Order> response = restTemplate.postForEntity(orderServiceURL, reqEntity ,Order.class);
+		
+		System.out.println(response);
+		
+		return payment;
+		
+	}
+}

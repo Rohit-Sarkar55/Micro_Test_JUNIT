@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PaymentServiceImplTest" project="payment-service" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="com.project.service.PaymentServiceImplTest" time="0.209" displayname="PaymentServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]">
+    <testcase name="testAdd" classname="com.project.service.PaymentServiceImplTest" time="0.182" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testAdd()]"/>
+    <testcase name="testSearch" classname="com.project.service.PaymentServiceImplTest" time="0.021" displayname="testSearch()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testSearch()]">
+      <failure>org.opentest4j.AssertionFailedError: expected: not &lt;null&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:49)&#13;
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:35)&#13;
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:30)&#13;
+	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:304)&#13;
+	at com.project.service.PaymentServiceImplTest.testSearch(PaymentServiceImplTest.java:61)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

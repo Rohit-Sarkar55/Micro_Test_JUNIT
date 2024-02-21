@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PaymentServiceImplTest" project="payment-service" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="com.project.service.PaymentServiceImplTest" time="0.265" displayname="PaymentServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]">
+    <testcase name="testAdd" classname="com.project.service.PaymentServiceImplTest" time="0.207" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testAdd()]"/>
+    <testcase name="testUpdateStatus" classname="com.project.service.PaymentServiceImplTest" time="0.009" displayname="testUpdateStatus()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testUpdateStatus()]"/>
+    <testcase name="testGetAll" classname="com.project.service.PaymentServiceImplTest" time="0.008" displayname="testGetAll()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testGetAll()]"/>
+    <testcase name="testRemove" classname="com.project.service.PaymentServiceImplTest" time="0.009" displayname="testRemove()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testRemove()]"/>
+    <testcase name="testSearch" classname="com.project.service.PaymentServiceImplTest" time="0.014" displayname="testSearch()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testSearch()]"/>
+  </testsuite>
+</testrun>

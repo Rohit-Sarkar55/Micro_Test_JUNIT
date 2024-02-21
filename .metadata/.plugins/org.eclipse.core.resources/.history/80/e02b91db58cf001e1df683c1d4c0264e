@@ -1,0 +1,33 @@
+package com.project.service;
+
+import java.util.List;
+
+import com.project.entity.Payment;
+
+public class PaymentServiceImpl implements PaymentService {
+
+	@Override
+	public Payment add(Payment payment) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Payment search(long paymentId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void remove(long paymentId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Payment> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

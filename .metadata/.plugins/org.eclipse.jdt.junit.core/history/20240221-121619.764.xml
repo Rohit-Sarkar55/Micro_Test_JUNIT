@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderControllerTest" project="order-service" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.project.controller.OrderControllerTest" time="0.632" displayname="OrderControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.OrderControllerTest]">
+    <testcase name="testAddOrder" classname="com.project.controller.OrderControllerTest" time="0.632" displayname="testAddOrder()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.OrderControllerTest]/[method:testAddOrder()]">
+      <failure>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;201&gt;&#13;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)&#13;
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)&#13;
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)&#13;
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)&#13;
+	at com.project.controller.OrderControllerTest.testAddOrder(OrderControllerTest.java:46)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

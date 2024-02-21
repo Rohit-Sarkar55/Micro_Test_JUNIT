@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderServiceImplTest" project="order-service" tests="4" started="4" failures="4" errors="0" ignored="0">
+  <testsuite name="com.project.service.OrderServiceImplTest" time="0.036" displayname="OrderServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]">
+    <testcase name="testSearchById" classname="com.project.service.OrderServiceImplTest" time="0.029" displayname="testSearchById()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]/[method:testSearchById()]">
+      <failure>org.opentest4j.AssertionFailedError: Not yet implemented&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)&#13;
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)&#13;
+	at com.project.service.OrderServiceImplTest.testSearchById(OrderServiceImplTest.java:16)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testAdd" classname="com.project.service.OrderServiceImplTest" time="0.002" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]/[method:testAdd()]">
+      <failure>org.opentest4j.AssertionFailedError: Not yet implemented&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)&#13;
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)&#13;
+	at com.project.service.OrderServiceImplTest.testAdd(OrderServiceImplTest.java:11)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testRemoveById" classname="com.project.service.OrderServiceImplTest" time="0.002" displayname="testRemoveById()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]/[method:testRemoveById()]">
+      <failure>org.opentest4j.AssertionFailedError: Not yet implemented&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)&#13;
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)&#13;
+	at com.project.service.OrderServiceImplTest.testRemoveById(OrderServiceImplTest.java:21)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testGetAll" classname="com.project.service.OrderServiceImplTest" time="0.002" displayname="testGetAll()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.OrderServiceImplTest]/[method:testGetAll()]">
+      <failure>org.opentest4j.AssertionFailedError: Not yet implemented&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)&#13;
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)&#13;
+	at com.project.service.OrderServiceImplTest.testGetAll(OrderServiceImplTest.java:26)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

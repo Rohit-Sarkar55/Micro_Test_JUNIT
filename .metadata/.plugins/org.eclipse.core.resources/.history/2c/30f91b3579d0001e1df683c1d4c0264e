@@ -1,0 +1,8 @@
+package com.project.dto;
+
+import com.project.entity.Order;
+
+public class OrderResponse {
+	private String message;
+	private Order order;
+}

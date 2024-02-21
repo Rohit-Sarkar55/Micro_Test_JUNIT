@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderControllerTest" project="order-service" tests="4" started="4" failures="0" errors="1" ignored="0">
+  <testsuite name="com.project.controller.OrderControllerTest" time="0.6" displayname="OrderControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.OrderControllerTest]">
+    <testcase name="test_getAllOrders" classname="com.project.controller.OrderControllerTest" time="0.297" displayname="test_getAllOrders()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.OrderControllerTest]/[method:test_getAllOrders()]"/>
+    <testcase name="test_deleteOrder" classname="com.project.controller.OrderControllerTest" time="0.045" displayname="test_deleteOrder()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.OrderControllerTest]/[method:test_deleteOrder()]">
+      <error>com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.project.entity.Order["orderDate"])&#13;
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)&#13;
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1308)&#13;
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:35)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)&#13;
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:772)&#13;
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:479)&#13;
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:318)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._writeValueAndClose(ObjectMapper.java:4719)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(ObjectMapper.java:3964)&#13;
+	at com.project.controller.OrderControllerTest.test_deleteOrder(OrderControllerTest.java:97)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="test_SearchOrder" classname="com.project.controller.OrderControllerTest" time="0.038" displayname="test_SearchOrder()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.OrderControllerTest]/[method:test_SearchOrder()]"/>
+    <testcase name="test_AddOrder" classname="com.project.controller.OrderControllerTest" time="0.21" displayname="test_AddOrder()" uniqueid="[engine:junit-jupiter]/[class:com.project.controller.OrderControllerTest]/[method:test_AddOrder()]"/>
+  </testsuite>
+</testrun>

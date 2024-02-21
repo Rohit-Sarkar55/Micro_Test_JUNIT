@@ -1,0 +1,59 @@
+package com.project.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.project.entity.Order;
+import com.project.repository.OrderRepository;
+
+
+
+class OrderServiceImplTest {
+	
+	@Autowired
+	OrderRepository orderRepository;
+	
+	@InjectMocks
+	OrderService orderService;
+
+//	@Test
+//	void testAdd() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	void testSearchById() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	void testRemoveById() {
+//		fail("Not yet implemented");
+//	}
+	
+	
+	@Test
+	void testGetAll() {
+		List<Order> list = new ArrayList<>();
+		list.add(new Order(101, 201,301, 99, LocalDate.now(), "pending"));
+		list.add(new Order(102, 201,302, 899, LocalDate.of(2023, 12, 25), "completed"));
+		list.add(new Order(103, 202, 303, 67, LocalDate.of(2024, 01, 31), "canceled"));
+		
+		
+		when(orderRepository.findAll()).thenReturn(list);
+		
+		orderService.getAll();
+		
+		assertTrue(list.size() == 3);
+	}
+
+}

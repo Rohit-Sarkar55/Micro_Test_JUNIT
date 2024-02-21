@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PaymentServiceImplTest" project="payment-service" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.project.service.PaymentServiceImplTest" time="0.26" displayname="PaymentServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]">
+    <testcase name="testAdd" classname="com.project.service.PaymentServiceImplTest" time="0.208" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testAdd()]"/>
+    <testcase name="testGetAll" classname="com.project.service.PaymentServiceImplTest" time="0.011" displayname="testGetAll()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testGetAll()]"/>
+    <testcase name="testRemove" classname="com.project.service.PaymentServiceImplTest" time="0.014" displayname="testRemove()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testRemove()]"/>
+    <testcase name="testSearch" classname="com.project.service.PaymentServiceImplTest" time="0.012" displayname="testSearch()" uniqueid="[engine:junit-jupiter]/[class:com.project.service.PaymentServiceImplTest]/[method:testSearch()]"/>
+  </testsuite>
+</testrun>

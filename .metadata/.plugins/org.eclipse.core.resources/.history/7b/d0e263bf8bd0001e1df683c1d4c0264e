@@ -1,0 +1,6 @@
+package com.project.dto;
+
+public class PaymentResponse {
+	private String message;
+	private Payment payment;
+}

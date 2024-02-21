@@ -1,0 +1,52 @@
+package com.project.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.ComponentScan;
+
+import com.project.entity.Payment;
+import com.project.repository.PaymentRepository;
+
+
+@SpringBootTest
+@ComponentScan("com.project")
+@ExtendWith(MockitoExtension.class)
+
+class PaymentServiceImplTest {
+	
+	@Mock
+	PaymentRepository paymentRepository;
+	
+	PaymentServiceImpl paymentService;
+	
+	@Test
+	void testAdd() {
+		
+	}
+
+	@Test
+	void testSearch() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testRemove() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetAll() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testUpdateStatus() {
+		fail("Not yet implemented");
+	}
+
+}

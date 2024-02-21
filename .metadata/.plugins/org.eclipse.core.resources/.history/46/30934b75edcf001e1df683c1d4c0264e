@@ -1,0 +1,80 @@
+package com.project.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.util.Optional;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.ComponentScan;
+
+import com.project.entity.Payment;
+import com.project.repository.PaymentRepository;
+
+@SpringBootTest
+@ComponentScan("com.project")
+@ExtendWith(MockitoExtension.class)
+
+class PaymentServiceImplTest {
+
+	@Mock
+	PaymentRepository paymentRepository;
+
+	@InjectMocks
+	PaymentServiceImpl paymentService;
+
+	@Test
+	void testAdd() {
+		Payment payment = new Payment();
+
+		when(paymentRepository.save(any(Payment.class))).thenReturn(payment);
+
+		Payment savedPayment = paymentService.add(payment);
+
+		assertNotNull(savedPayment.getPaymentId());
+
+		verify(paymentRepository, times(1)).save(payment);
+
+	}
+
+	@Test
+	void testSearch() {
+		Payment payment = new Payment();
+
+		when(paymentRepository.save(any(Payment.class))).thenReturn(payment);
+
+		Payment savedPayment = paymentService.add(payment);
+
+		assertNotNull(savedPayment.getPaymentId());
+		
+		System.out.println(savedPayment.getPaymentId());
+		
+		
+
+	}
+
+//	@Test
+//	void testRemove() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	void testGetAll() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	void testUpdateStatus() {
+//		fail("Not yet implemented");
+//	}
+
+}

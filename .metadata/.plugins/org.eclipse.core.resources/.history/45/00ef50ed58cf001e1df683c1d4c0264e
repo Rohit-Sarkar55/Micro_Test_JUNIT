@@ -1,0 +1,39 @@
+package com.project.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.project.entity.Payment;
+import com.project.repository.PaymentRepository;
+
+
+@Service
+public class PaymentServiceImpl implements PaymentService {
+	
+	PaymentRepository repository;
+	
+	@Override
+	public Payment add(Payment payment) {
+		return null;
+	}
+
+	@Override
+	public Payment search(long paymentId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void remove(long paymentId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Payment> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

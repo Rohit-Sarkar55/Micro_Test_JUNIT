@@ -1,0 +1,62 @@
+package com.project.controller;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
+
+import java.time.LocalDate;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.project.entity.Payment;
+import com.project.service.PaymentServiceImpl;
+
+@WebMvcTest(controllers = {PaymentController.class})
+class PaymentControllerTest {
+	
+	@MockBean
+	PaymentServiceImpl paymentService;
+	
+	MockMvc mockMvc;
+
+	@Test
+	void test_AddPayment() {
+		Payment p = new Payment();
+		p.setPaymentId(1);
+		p.setOrderId(1);
+		p.setPaymentAmount(100);
+		p.setPaymentDate(LocalDate.of(2023, 10, 10));
+		p.setPaymentMethod("cash");
+		p.setPaymentStatus("completed");
+		
+		
+	}
+
+	@Test
+	void testProcessPayment() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSearchPayment() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testRemovePayment() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetAllPayments() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testUpdatePayment() {
+		fail("Not yet implemented");
+	}
+
+}
